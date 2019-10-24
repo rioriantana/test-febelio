@@ -1,0 +1,49 @@
+doctype html
+html(lang='en')
+    head
+      meta(charset='utf-8')
+      meta(name='viewport', content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no')
+      meta(name='description', content='description')
+      meta(name='keywords', content='keywords')
+      meta(name='author', content='author')
+      meta(name="robots", content="index, follow")
+
+      //- ----- link website ----- //
+
+      //- ----- CSS Files ----- //
+      link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css')
+
+    body
+
+      script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
+      script(type='text/javascript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
+block title
+  title Product Detail
+block content
+  div.container
+    div.row
+      div.col-xs-6.col-md-4
+      div.col-xs-6.col-md-4
+      p <a href="/">Back To Input Product</a>
+      p <a href="/listProduct">List Product</a>
+            
+           p
+        table.table.table-bordered.table-striped.table-hover
+
+          thead
+            tr 
+            th.text-center id
+            th.text-center name
+            th.text-center unit_price
+            th.text-center url
+
+            tbody
+           each value, key in results
+            tr 
+            th.text-center <a href="/detail_product/#{value._id}">#{value.product.id}</a>
+            th.text-center #{value.product.name}
+            th.text-center #{value.product.unit_price}
+            th.text-center #{value.product.url}
+            
+          
+      div.col-xs-6.col-md-4

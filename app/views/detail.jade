@@ -18,15 +18,522 @@ html(lang='en')
 
       script(type='text/javascript', src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js')
       script(type='text/javascript', src='https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js')
-block title
-  title Product Detail
-block content
-  div.container
-    div.row
-      div.col-xs-6.col-md-4
-      div.col-xs-6.col-md-4
-            label Input Product Link
-            br
-            div.results
-            #{results}
-      div.col-xs-6.col-md-4
+    block title
+      title Product Detail
+    block content
+      div.container
+        div.row
+          div.col-xs-6.col-md-4
+          div.col-xs-6.col-md-4
+          p <a href="/">Back To Input Product</a>
+          p <a href="/list_product">List Product</a>
+                
+              p
+            table.table.table-bordered.table-striped.table-hover
+              thead
+                tr 
+                th.text-left id
+                th.text-left #{results.id}
+                tr 
+                th.text-left name
+                th.text-left #{results.name}
+                tr 
+                th.text-left currency
+                th.text-left #{results.currency}
+                tr 
+                th.text-left unit_price
+                th.text-left #{results.unit_price}
+                tr 
+                th.text-left unit_sale_price
+                th.text-left #{results.unit_sale_price}
+                tr 
+                th.text-left url
+                th.text-left #{results.url} 
+                tr 
+                th.text-left https
+                th.text-left #{results.https}
+                tr 
+                th.text-left product_image_url
+                th.text-left <img src="#{results.product_image_url}" width="100%"> 
+                tr 
+                th.text-left https
+                th.text-left #{results.https}
+                tr 
+                th.text-left am_shipping_type
+                th.text-left #{results.am_shipping_type}
+                tr 
+                th.text-left armrest_type
+                th.text-left #{results.armrest_type}
+                tr 
+                th.text-left assembly_required
+                th.text-left #{results.assembly_required}
+                tr 
+                th.text-left assortment
+                th.text-left #{results.assortment}
+                tr 
+                th.text-left beds_assembly
+                th.text-left #{results.beds_assembly}
+                tr 
+                th.text-left beds_colour
+                th.text-left #{results.beds_colour}
+                tr 
+                th.text-left beds_finishing_material
+                th.text-left #{results.beds_finishing_material}
+                tr 
+                th.text-left beds_legs
+                th.text-left #{results.beds_legs}
+                tr 
+                th.text-left beds_material_frame
+                th.text-left #{results.beds_material_frame}
+                tr 
+                th.text-left beds_price
+                th.text-left #{results.beds_price}
+                tr 
+                th.text-left beds_shipping
+                th.text-left #{results.beds_shipping}
+                tr 
+                th.text-left beds_size
+                th.text-left #{results.beds_size}
+                tr 
+                th.text-left beds_with_head_board
+                th.text-left #{results.beds_with_head_board}
+                tr 
+                th.text-left beds_with_storage
+                th.text-left #{results.beds_with_storage}
+                tr 
+                th.text-left bed_lenin_pattern
+                th.text-left #{results.bed_lenin_pattern}
+                tr 
+                th.text-left bed_lenin_price
+                th.text-left #{results.bed_lenin_price}
+                tr 
+                th.text-left bed_linen_colour
+                th.text-left #{results.bed_linen_colour}
+                tr 
+                th.text-left bed_linen_fabric
+                th.text-left #{results.bed_linen_fabric}
+                tr 
+                th.text-left bed_linen_shipping
+                th.text-left #{results.bed_linen_shipping}
+                tr 
+                th.text-left bed_linen_size
+                th.text-left #{results.bed_linen_size}
+                tr 
+                th.text-left bed_linen_thickness
+                th.text-left #{results.bed_linen_thickness}
+                tr 
+                th.text-left bed_size
+                th.text-left #{results.bed_size}
+                tr 
+                th.text-left best_seller
+                th.text-left #{results.best_seller}
+                tr 
+                th.text-left care_instructions
+                th.text-left #{results.care_instructions}
+                tr 
+                th.text-left carpets_colour
+                th.text-left #{results.carpets_colour}
+                tr 
+                th.text-left carpets_fabric
+                th.text-left #{results.carpets_fabric}
+                tr 
+                th.text-left carpets_pattern
+                th.text-left #{results.carpets_pattern}
+                tr 
+                th.text-left carpets_price
+                th.text-left #{results.carpets_price}
+                tr 
+                th.text-left carpets_shape
+                th.text-left #{results.carpets_shape}
+                tr 
+                th.text-left carpets_shipping
+                th.text-left #{results.carpets_shipping}
+                tr 
+                th.text-left carpets_thickness
+                th.text-left #{results.carpets_thickness}
+                tr 
+                th.text-left catalog_sticker
+                th.text-left #{results.catalog_sticker}
+                tr 
+                th.text-left color
+                th.text-left #{results.color}
+                tr 
+                th.text-left comfort_level_pillow
+                th.text-left #{results.comfort_level_pillow}
+                tr 
+                th.text-left creator_id
+                th.text-left #{results.creator_id}
+                tr 
+                th.text-left cushion
+                th.text-left #{results.cushion}
+                tr 
+                th.text-left deliverytime
+                th.text-left #{results.deliverytime}
+                tr 
+                th.text-left deliverytime_backorder
+                th.text-left #{results.deliverytime_backorder}
+                tr 
+                th.text-left delivery_installation
+                th.text-left #{results.delivery_installation}
+                tr 
+                th.text-left delivery_time_type_filter
+                th.text-left #{results.delivery_time_type_filter}
+                tr 
+                th.text-left description
+                th.text-left #{results.description}
+                tr 
+                th.text-left NB
+                th.text-left #{results.NB} 
+                tr 
+                th.text-left dining_table_shape
+                th.text-left #{results.dining_table_shape}
+                tr 
+                th.text-left dining_table_type
+                th.text-left #{results.dining_table_type}
+                tr 
+                th.text-left ebizmarts_mark_visited
+                th.text-left #{results.ebizmarts_mark_visited}
+                tr 
+                th.text-left english_product_name
+                th.text-left #{results.english_product_name}
+                tr 
+                th.text-left exclude
+                th.text-left #{results.exclude}
+                tr 
+                th.text-left fabric_color
+                th.text-left #{results.fabric_color}
+                tr 
+                th.text-left fastest_delivery
+                th.text-left #{results.fastest_delivery}
+                tr 
+                th.text-left featured
+                th.text-left #{results.featured}
+                tr 
+                th.text-left fill_material_pillow
+                th.text-left #{results.fill_material_pillow}
+                tr 
+                th.text-left finishing_color
+                th.text-left #{results.finishing_color}
+                tr 
+                th.text-left finish_material
+                th.text-left #{results.finish_material}
+                tr 
+                th.text-left frontendproduct_product_status
+                th.text-left #{results.frontendproduct_product_status}
+                tr 
+                th.text-left headboard
+                th.text-left #{results.headboard}
+                tr 
+                th.text-left heading_style
+                th.text-left #{results.heading_style}
+                tr 
+                th.text-left image_type
+                th.text-left #{results.image_type}
+                tr 
+                th.text-left is_accessory
+                th.text-left #{results.is_accessory}
+                tr 
+                th.text-left is_recurring
+                th.text-left #{results.is_recurring}
+                tr 
+                th.text-left lamps_assembly_required
+                th.text-left #{results.lamps_assembly_required}
+                tr 
+                th.text-left lamps_base_colour
+                th.text-left #{results.lamps_base_colour}
+                tr 
+                th.text-left lamps_base_material
+                th.text-left #{results.lamps_base_material}
+                tr 
+                th.text-left lamps_price
+                th.text-left #{results.lamps_price}
+                tr 
+                th.text-left lamps_shade_material
+                th.text-left #{results.lamps_shade_material}
+                tr 
+                th.text-left lamps_shipping
+                th.text-left #{results.lamps_shipping}
+                tr 
+                th.text-left lamps_size
+                th.text-left #{results.lamps_size}
+                tr 
+                th.text-left lamps_style
+                th.text-left #{results.lamps_style}
+                tr 
+                th.text-left lamps_type
+                th.text-left #{results.lamps_type}
+                tr 
+                th.text-left lamps_with_bulb
+                th.text-left #{results.lamps_with_bulb}
+                tr 
+                th.text-left leather_color
+                th.text-left #{results.leather_color}
+                tr 
+                th.text-left legs_material
+                th.text-left #{results.legs_material}
+                tr 
+                th.text-left manufacturer
+                th.text-left #{results.manufacturer}
+                tr 
+                th.text-left manufacturing_lead_time
+                th.text-left #{results.manufacturing_lead_time}
+                tr 
+                th.text-left material
+                th.text-left #{results.material}
+                tr 
+                th.text-left mattress_assembly
+                th.text-left #{results.mattress_assembly}
+                tr 
+                th.text-left mattress_colour
+                th.text-left #{results.mattress_colour}
+                tr 
+                th.text-left mattress_comfort
+                th.text-left #{results.mattress_comfort}
+                tr 
+                th.text-left mattress_material_fabric
+                th.text-left #{results.mattress_material_fabric}
+                tr 
+                th.text-left mattress_material_foam
+                th.text-left #{results.mattress_material_foam}
+                tr 
+                th.text-left mattress_price
+                th.text-left #{results.mattress_price}
+                tr 
+                th.text-left mattress_shipping
+                th.text-left #{results.mattress_shipping}
+                tr 
+                th.text-left mattress_style
+                th.text-left #{results.mattress_style}
+                tr 
+                th.text-left model_frame
+                th.text-left #{results.model_frame}
+                tr 
+                th.text-left netsuite_isserialize
+                th.text-left #{results.netsuite_isserialize}
+                tr 
+                th.text-left netsuite_syncenabled
+                th.text-left #{results.netsuite_syncenabled}
+                tr 
+                th.text-left netsuite_type
+                th.text-left #{results.netsuite_type}
+                tr 
+                th.text-left out_of_stock_visibility
+                th.text-left #{results.out_of_stock_visibility}
+                tr 
+                th.text-left paint_color
+                th.text-left #{results.paint_color}
+                tr 
+                th.text-left pillow_size
+                th.text-left #{results.pillow_size}
+                tr 
+                th.text-left product_size
+                th.text-left #{results.product_size}
+                tr 
+                th.text-left product_type
+                th.text-left #{results.product_type}
+                tr 
+                th.text-left product_type_filter
+                th.text-left #{results.product_type_filter}
+                tr 
+                th.text-left product_videos
+                th.text-left #{results.product_videos}
+                tr 
+                th.text-left https
+                th.text-left #{results.https}
+                tr 
+                th.text-left reorder_type
+                th.text-left #{results.reorder_type}
+                tr 
+                th.text-left reporting_category
+                th.text-left #{results.reporting_category}
+                tr 
+                th.text-left seating_arms_style
+                th.text-left #{results.seating_arms_style}
+                tr 
+                th.text-left seating_assembly_required
+                th.text-left #{results.seating_assembly_required}
+                tr 
+                th.text-left seating_colour
+                th.text-left #{results.seating_colour}
+                tr 
+                th.text-left seating_finishing_material
+                th.text-left #{results.seating_finishing_material}
+                tr 
+                th.text-left seating_legs
+                th.text-left #{results.seating_legs}
+                tr 
+                th.text-left seating_material_frame
+                th.text-left #{results.seating_material_frame}
+                tr 
+                th.text-left seating_price
+                th.text-left #{results.seating_price}
+                tr 
+                th.text-left seating_print
+                th.text-left #{results.seating_print}
+                tr 
+                th.text-left seating_shipping
+                th.text-left #{results.seating_shipping}
+                tr 
+                th.text-left seating_style
+                th.text-left #{results.seating_style}
+                tr 
+                th.text-left seating_with_cushion
+                th.text-left #{results.seating_with_cushion}
+                tr 
+                th.text-left sets_arms_style
+                th.text-left #{results.sets_arms_style}
+                tr 
+                th.text-left sets_assembly_required
+                th.text-left #{results.sets_assembly_required}
+                tr 
+                th.text-left sets_colour
+                th.text-left #{results.sets_colour}
+                tr 
+                th.text-left sets_fabric
+                th.text-left #{results.sets_fabric}
+                tr 
+                th.text-left sets_finishing_material
+                th.text-left #{results.sets_finishing_material}
+                tr 
+                th.text-left sets_legs
+                th.text-left #{results.sets_legs}
+                tr 
+                th.text-left sets_material_frame
+                th.text-left #{results.sets_material_frame}
+                tr 
+                th.text-left sets_price
+                th.text-left #{results.sets_price}
+                tr 
+                th.text-left sets_print
+                th.text-left #{results.sets_print}
+                tr 
+                th.text-left sets_shipping
+                th.text-left #{results.sets_shipping}
+                tr 
+                th.text-left sets_style
+                th.text-left #{results.sets_style}
+                tr 
+                th.text-left shipping_return
+                th.text-left #{results.shipping_return}
+                tr 
+                th.text-left showroom_filter
+                th.text-left #{results.showroom_filter}
+                tr 
+                th.text-left show_stocks
+                th.text-left #{results.show_stocks}
+                tr 
+                th.text-left sku
+                th.text-left #{results.sku} 
+                tr 
+                th.text-left sofa_arm_style
+                th.text-left #{results.sofa_arm_style}
+                tr 
+                th.text-left sofa_assembly_required
+                th.text-left #{results.sofa_assembly_required}
+                tr 
+                th.text-left sofa_color
+                th.text-left #{results.sofa_color}
+                tr 
+                th.text-left sofa_fabric
+                th.text-left #{results.sofa_fabric}
+                tr 
+                th.text-left sofa_finishing_material
+                th.text-left #{results.sofa_finishing_material}
+                tr 
+                th.text-left sofa_legs
+                th.text-left #{results.sofa_legs}
+                tr 
+                th.text-left sofa_material_frame
+                th.text-left #{results.sofa_material_frame}
+                tr 
+                th.text-left sofa_orientation
+                th.text-left #{results.sofa_orientation}
+                tr 
+                th.text-left sofa_packaging_dimension_cbm
+                th.text-left #{results.sofa_packaging_dimension_cbm}
+                tr 
+                th.text-left sofa_print
+                th.text-left #{results.sofa_print}
+                tr 
+                th.text-left sofa_shipping
+                th.text-left #{results.sofa_shipping}
+                tr 
+                th.text-left sofa_style
+                th.text-left #{results.sofa_style}
+                tr 
+                th.text-left sticker
+                th.text-left #{results.sticker}
+                tr 
+                th.text-left storage
+                th.text-left #{results.storage}
+                tr 
+                th.text-left storage_assembly_required
+                th.text-left #{results.storage_assembly_required}
+                tr 
+                th.text-left storage_colour
+                th.text-left #{results.storage_colour}
+                tr 
+                th.text-left storage_finishing_material
+                th.text-left #{results.storage_finishing_material}
+                tr 
+                th.text-left storage_legs
+                th.text-left #{results.storage_legs}
+                tr 
+                th.text-left storage_material_frame
+                th.text-left #{results.storage_material_frame}
+                tr 
+                th.text-left storage_price
+                th.text-left #{results.storage_price}
+                tr 
+                th.text-left storage_shipping
+                th.text-left #{results.storage_shipping}
+                tr 
+                th.text-left storage_style
+                th.text-left #{results.storage_style}
+                tr 
+                th.text-left storage_type
+                th.text-left #{results.storage_type}
+                tr 
+                th.text-left supplier_name
+                th.text-left #{results.supplier_name}
+                tr 
+                th.text-left supplier_price_change
+                th.text-left #{results.supplier_price_change}
+                tr 
+                th.text-left table_assembly
+                th.text-left #{results.table_assembly}
+                tr 
+                th.text-left table_colour
+                th.text-left #{results.table_colour}
+                tr 
+                th.text-left table_legs
+                th.text-left #{results.table_legs}
+                tr 
+                th.text-left table_material_frame
+                th.text-left #{results.table_material_frame}
+                tr 
+                th.text-left table_price
+                th.text-left #{results.table_price}
+                tr 
+                th.text-left table_shipping
+                th.text-left #{results.table_shipping}
+                tr 
+                th.text-left table_style
+                th.text-left #{results.table_style}
+                tr 
+                th.text-left top_table_custom
+                th.text-left #{results.top_table_custom}
+                tr 
+                th.text-left upholstery_color
+                th.text-left #{results.upholstery_color}
+                tr 
+                th.text-left wall_art_artist
+                th.text-left #{results.wall_art_artist}
+                tr 
+                th.text-left weight
+                th.text-left #{results.weight}
+                tr 
+                th.text-left wood_type
+                th.text-left #{results.wood_type}
+              
+          div.col-xs-6.col-md-4

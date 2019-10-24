@@ -41,3 +41,19 @@ exports.detail_product = (req, res)=>{
         } 
     })
 }
+
+exports.list_product = (req, res)=>{
+    
+    Product.find()
+    .lean()
+    .exec(function (err, results) {
+        if (err) res.json(err)
+        try {
+            console.log(results)
+            return res.render('list',{results : results})            
+        } catch (error) {
+            console.log("errror getting results")
+            console.log(error)
+        } 
+    })
+}

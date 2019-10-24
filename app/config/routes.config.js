@@ -16,6 +16,7 @@ module.exports = (app) => {
 
     app.get('/detail_product/:id', product.detail_product);
 
+    app.get('/list_product', product.list_product);
 
 
      /* ============ DEFAULT ROUTE =========*/
