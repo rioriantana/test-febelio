@@ -1,0 +1,35 @@
+{
+  "name": "test-fabelio",
+  "version": "1.0.0",
+  "description": "Testing script for fabelio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rioriantana/test-febelio.git"
+  },
+  "keywords": [
+    "test"
+  ],
+  "author": "Rio Riantana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rioriantana/test-febelio/issues"
+  },
+  "homepage": "https://github.com/rioriantana/test-febelio#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.3.1",
+    "cheerio": "^1.0.0-rc.3",
+    "express": "^4.17.1",
+    "express-prettify": "^0.1.1",
+    "jade": "^1.11.0",
+    "mongoose": "^5.7.6",
+    "multer": "^1.4.2",
+    "node-fetch": "^2.6.0",
+    "nodemon": "^1.19.4",
+    "promise": "^8.0.3"
+  }
+}
