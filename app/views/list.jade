@@ -37,16 +37,18 @@ block content
             tr 
             th.text-center id
             th.text-center name
-            th.text-center unit_price
+            th.text-center description
+            th.text-center unit_price (Rp)
             th.text-center url
 
             tbody
            each value, key in results
             tr 
-            th.text-center <a href="/detail_product/#{value._id}">#{value.product.id}</a>
-            th.text-center #{value.product.name}
-            th.text-center #{value.product.unit_price}
-            th.text-center #{value.product.url}
+            th.text-left <a href="/detail_product/#{value._id}">#{value.product.id}</a>
+            th.text-left #{value.product.name}
+            th.text-left #{value.product.description}
+            th.text-right #{value.product.unit_sale_price}
+            th.text-left #{value.product.url}
             
           
       div.col-xs-6.col-md-4
